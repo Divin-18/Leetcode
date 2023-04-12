@@ -11,9 +11,9 @@ class MedianFinder {
     public void addNum(int num) {
         if(maxHeap.isEmpty() || maxHeap.peek() >= num)
             maxHeap.add(num);
-        else
+        else{
             minHeap.add(num);
-        
+        }
         //Either both the heap will have equal number of elements or 
         //maxHeap will have one more element than the minHeap;
         
